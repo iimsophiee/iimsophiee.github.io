@@ -1,6 +1,11 @@
-<ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="{{site.baseurl}}">Home</a></li>
-    <li class="nav-about" role="menuitem"><a href="{{site.baseurl}}about/">About</a></li>
-    <li class="nav-getting-started" role="menuitem"><a href="{{site.baseurl}}tag/getting-started/">Getting Started</a></li>
-    <li class="nav-try-ghost" role="menuitem"><a href="https://ghost.org">Try Ghost</a></li>
-</ul>
+<nav class="nav">
+  <div class="nav-container">
+    <a href="{{ site.baseurl }}/">
+      <h2 class="nav-title">{{ site.title }}</h2>
+    </a>
+    <ul>
+      <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+      <li><a href="{{ site.baseurl }}/">Posts</a></li>
+    </ul>
+  </div>
+</nav>

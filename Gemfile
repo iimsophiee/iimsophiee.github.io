@@ -1,6 +1,7 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "jekyll", "~> 3.7.4"
-gem "github-pages", "~> 192"
-gem "rake", "~> 12.3.1"
-gem "slugify", "~> 1.0"
+source "https://rubygems.org"
+gemspec
+
+gem "jekyll-remote-theme"
+gem "jekyll-paginate"
